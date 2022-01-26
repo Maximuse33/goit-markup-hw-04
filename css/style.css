@@ -226,7 +226,6 @@ span {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
 .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -242,7 +241,26 @@ span {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 16px;
 }
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.team-social-item + .team-social-item {
+  margin-left: 10px;
+}
+.team-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
 /*--------- FILTER PORTFOLIO.html---------*/
 .filter {
   padding-top: 94px;
