@@ -160,6 +160,15 @@ span {
 .benefits-item:not(:last-child) {
   margin-right: 30px;
 }
+.benifits-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: var(--btn-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
@@ -259,8 +268,50 @@ span {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  fill: #afb1b8;
+}
+.team-social-link:hover,
+.team-social-link:focus {
+  fill: var(--primary-bg-color);
+  background-color: var(--selection-color);
 }
 
+/*--------- CLIENTS INDEX.html---------*/
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+  text-align: center;
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+.clients-icon-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 94px;
+}
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+.clients-link {
+  width: 170px;
+  height: 92px;
+  background-color: var(--primary-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--selection-color);
+  border-color: var(--selection-color);
+}
 /*--------- FILTER PORTFOLIO.html---------*/
 .filter {
   padding-top: 94px;
@@ -372,6 +423,41 @@ span {
   letter-spacing: 0.03em;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: var(--primary-bg-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--selection-color);
 }
 
 .visually-hidden {
