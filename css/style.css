@@ -97,25 +97,38 @@ span {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  display: flex;
+  align-items: center;
 }
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .header-link:hover,
 .header-link:focus,
-.contact:hover,
-.contact:focus {
+.header-cont:hover,
+.header-cont:focus {
   color: var(--selection-color);
 }
 
 /*--------- HERO INDEX.html---------*/
 .hero {
+  text-align: center;
+  padding: 200px 0;
+}
+.hero-container {
+  max-width: 1600px;
+  min-height: 600px;
+  margin: 0 auto;
   background-color: var(--hero-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -142,7 +155,8 @@ span {
   cursor: pointer;
   margin: 0 485px;
 }
-.hero-btn:hover {
+.hero-btn:hover,
+.hero-btn:focus {
   background-color: #188ce8;
 }
 /*--------- MAIN BENEFITS INDEX.html---------*/
@@ -297,12 +311,12 @@ span {
   margin-left: 30px;
 }
 .clients-link {
-  width: 170px;
-  height: 92px;
-  background-color: var(--primary-bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 170px;
+  height: 92px;
+  background-color: var(--primary-bg-color);
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
@@ -339,10 +353,6 @@ span {
   border: none;
 }
 .filter-btn:hover {
-  color: var(--primary-bg-color);
-  background-color: var(--selection-color);
-}
-.all {
   color: var(--primary-bg-color);
   background-color: var(--selection-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -393,10 +403,10 @@ span {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-container,
-.footer-item {
+.footer-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: baseline;
 }
 .footer-logo {
   font-family: 'Raleway', sans-serif;
@@ -424,6 +434,10 @@ span {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
+.contact:hover,
+.contact:focus {
+  color: var(--selection-color);
+}
 .footer-text {
   font-weight: bold;
   font-size: 14px;
@@ -432,14 +446,21 @@ span {
   font-style: normal;
   text-transform: uppercase;
   color: #ffffff;
-  display: flex;
-  justify-content: center;
   margin-bottom: 20px;
+}
+.footer-address {
+  display: flex;
+  flex-direction: column;
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 70px;
 }
 .footer-social-list {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .footer-social-item + .footer-social-item {
   margin-left: 10px;
