@@ -29,19 +29,28 @@
                     <a class="link header-link" href="/">Контакты</a></li>
             </ul>
         </nav>
-        <ul class="list header-contact">
-            <li class="header-item"><a class="link header-cont contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="header-item"><a class="link header-cont contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <ul class="list header-contact">
+            <li class="header-item">
+                <a class="link header-cont" href="mailto:info@devstudio.com">
+                    <svg class="header-icon" width="16" height="12">
+                        <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com</a>
+            </li>
+            <li class="header-item">
+                <a class="link header-cont" href="tel:+380961111111">
+                    <svg class="header-icon" width="16" height="12">
+                        <use href="./images/icons.svg#icon-smartphone"></use>
+                    </svg>+38 096 111 11 11</a>
+            </li>
         </ul>
-        </div>
+    </div>
     </header>
     <!-- HERO -->
-   <div>
+   <div class="hero-container">
         <section  class="hero">
-            <div class="container">
+           <div class="container"></div>
            <h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
            <button type="button" class="hero-btn">Заказать услугу</button>
-            </div>
         </section>
    </div>
    <main>
@@ -85,7 +94,7 @@
                         <p class="benefits-title">Современные технологии</p>
                         <p class="benefits-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
-            </ul>
+                </ul>
             </div>
         </section>
         <!-- ABOUT -->
@@ -313,13 +322,16 @@
     <!-- FOOTER -->
    <footer class="footer">
        <div class="container footer-container">
-        <a class="link footer-logo" href="/"><span>Web</span>Studio</a>
-       <address>
-            <ul class="list footer-list">
-                <li class="footer-item"><a class="link address contact" href="https://goo.gl/maps/kqxBph1CpzEgeCtw7" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li class="footer-item"><a class="link footer-contact contact" href="mailto:info@example.com">info@example.com</a></li>
-                <li class="footer-item"><a class="link footer-contact contact" href="tel:+380991111111">+38 099 111 11 11</a></li>
-            </ul>
+           <div class="footer-address">
+            <a class="link footer-logo" href="/"><span>Web</span>Studio</a>
+            <address>
+                <ul class="list footer-list">
+                    <li class="footer-item"><a class="link address contact" href="https://goo.gl/maps/kqxBph1CpzEgeCtw7" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="footer-item"><a class="link footer-contact contact" href="mailto:info@example.com">info@example.com</a></li>
+                    <li class="footer-item"><a class="link footer-contact contact" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
+            </div>
             <div class="footer-social">
                 <p class="footer-text">Присоединяйтесь</p>
                 <ul class="footer-social-list list">
@@ -353,8 +365,7 @@
                     </li>
                 </ul>
             </div>
-        </address>
-        </div>
+       </div>
     </footer>
    </body>
 </html>
